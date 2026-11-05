@@ -1,0 +1,167 @@
+{
+	"gravity": 2200.0,
+	"jump_initial_velocity": 500.0,
+	"hold_boost_acceleration": 2600.0,
+	"max_hold_time": 0.3,
+	"ground_y": 500.0,
+	"demo_short_press_seconds": 0.06,
+	"demo_long_press_seconds": 0.5,
+	"demo_pause_seconds": 1.2,
+	"scroll_speed": 420.0,
+	"ground_layer_ratio": 1.0,
+	"city_layer_ratio": 0.4,
+	"cloud_layer_ratio": 0.15,
+	"dog_scale": 0.4,
+	"dog_run_paw_bottoms": [
+		374,
+		406,
+		406,
+		402
+	],
+	"dog_jump_paw_bottoms": [
+		424,
+		412,
+		340,
+		402
+	],
+	"city_scale": 0.65,
+	"city_bottom_offset": 0.0,
+	"cloud_scale": 0.35,
+	"cloud_layout": [
+		[
+			80.0,
+			70.0,
+			0
+		],
+		[
+			380.0,
+			140.0,
+			1
+		],
+		[
+			660.0,
+			60.0,
+			0
+		],
+		[
+			930.0,
+			120.0,
+			1
+		]
+	],
+	"obstacles": {
+		"seed": 0,
+		"spawn_x_margin": 40.0,
+		"gap_min": 450.0,
+		"gap_max": 900.0,
+		"safety_margin": 30.0,
+		"tap_margin": 8.0,
+		"min_gap_reaction_seconds": 0.2,
+		"kinds": [
+			{
+				"id": "bug",
+				"tier": "low",
+				"texture": "res://assets/art/items/bug.tres",
+				"weight": 4.0,
+				"scale": 0.2,
+				"height": 46.0,
+				"opaque_rect": [
+					58,
+					114,
+					357,
+					344
+				]
+			},
+			{
+				"id": "issue_crate",
+				"tier": "medium",
+				"texture": "res://assets/art/items/issue_crate.tres",
+				"weight": 3.0,
+				"scale": 0.32,
+				"height": 93.1,
+				"opaque_rect": [
+					59,
+					74,
+					394,
+					365
+				]
+			},
+			{
+				"id": "merge_conflict",
+				"tier": "tall",
+				"texture": "res://assets/art/items/merge_conflict.tres",
+				"weight": 2.0,
+				"scale": 0.5,
+				"height": 141.0,
+				"opaque_rect": [
+					12,
+					80,
+					362,
+					362
+				]
+			}
+		]
+	},
+	"collision": {
+		"hitbox_width": 40.0,
+		"hitbox_height": 100.0,
+		"hitbox_offset_x": 0.0,
+		"obstacle_hitbox_shrink": 10.0
+	},
+	"game_over": {
+		"restart_delay_seconds": 0.3,
+		"restart_input_grace_seconds": 0.1,
+		"game_over_font_size": 64,
+		"restart_hint_font_size": 32
+	},
+	"score": {
+		"score_per_pixel": 0.025,
+		"high_score_path": "user://high_score.json",
+		"hud_font_size": 32
+	},
+	"speed_ramp": {
+		"rate_per_second": 5.0,
+		"max_speed": 640.0
+	},
+	"collectibles": {
+		"seed": 0,
+		"spawn_chance": 0.7,
+		"edge_margin": 140.0,
+		"safety_margin": 30.0,
+		"sparkle_seconds": 0.35,
+		"sparkle_scale": 0.3,
+		"sparkle_texture": "res://assets/art/items/collect_sparkle.tres",
+		"kinds": [
+			{
+				"id": "commit_treat",
+				"texture": "res://assets/art/items/commit_treat.tres",
+				"points": 10,
+				"weight": 6,
+				"scale": 0.2,
+				"pickup_size": 50.0,
+				"height_min": 30.0,
+				"height_max": 60.0
+			},
+			{
+				"id": "code_bone",
+				"texture": "res://assets/art/items/code_bone.tres",
+				"points": 25,
+				"weight": 3,
+				"scale": 0.2,
+				"pickup_size": 50.0,
+				"height_min": 130.0,
+				"height_max": 200.0
+			},
+			{
+				"id": "star_cookie",
+				"texture": "res://assets/art/items/star_cookie.tres",
+				"points": 50,
+				"weight": 1,
+				"scale": 0.22,
+				"pickup_size": 50.0,
+				"height_min": 230.0,
+				"height_max": 300.0
+			}
+		]
+	}
+}

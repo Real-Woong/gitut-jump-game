@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://src/player/player.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://assets/art/dog/dog_frames.tres" id="2"]
+
+[node name="Player" type="Node2D"]
+position = Vector2(250, 500)
+script = ExtResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2")
+animation = &"run"
+autoplay = "run"
